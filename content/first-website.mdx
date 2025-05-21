@@ -1,0 +1,78 @@
+---
+title: "Creating a (Personal) Website for the First Time"
+publishedAt: "2025-05-15"
+type: "Web Development"
+description: "\"Web dev isn't hard!\" I say, lying to myself."
+---
+
+So, this is kind of awkward.    
+I never written a blog post before, but here's to the first. 🥂
+
+
+
+## introduction
+
+For starters, I never really "created" a web-app before. 
+
+Most of my web development experiences came from pre-existing set-ups or team-based projects, which never let me from learning the entire development pipeline! 
+As summer arrived and my schedule cleared, I finally was able to experience the web development experience to it's fullest. 
+
+Seeing how my peers used Next.js as the tech stack as well as other related dependencies, **I was ready**.
+
+
+
+## type shit? more like TypeScript
+
+Good news! I know what a JavaScript file is.   
+Bad news. Many template options Next.js displayed utilized TypeScript.  
+
+While a minor issue, the tech stack utilized in my classes cannot be any less similar. (See [UE5 Plug-in]() about the frontend stack). 
+Thankfully, I had the option to (god forbid) learn about new tech stacks. With my lovely skill of typing at 30 WPM, I managed to find 
+[a pretty template to use as my own website](https://magicui.design/docs/templates/portfolio)!  
+
+![Portfolio Template](/blog/5_15_25/portfolio-demo.gif "Portfolio Template Demo")
+
+The tech stack of the template (and this website) is as follows:  
+React, Next.js, TypeScript, Tailwind CSS, Motion, and shadcn/ui.  
+
+Of those six, I only know the first two. Fun.  
+It was time for me to learn some new technologies and libraries!
+
+
+## what the hell is a "tale win css"? 
+Thankfully, a university degree in Computer Science wasn't all for naught.  
+
+Generic pages generally utilized three components: HTML, CSS, and JavaScript.
+What came to a surprise was the existence of Tailwind CSS, which simplified how certain parts of the page would look.  
+
+...and my god, was it a god send.
+
+One of the earliest examples was the lack of seperation of the "content" and the "background". Looking through the project, 
+the background colors and how it was called can be found in the `globals.css` file. From there, simply adding the proper 
+background color call i.e. `bg-muted` created a clean seperation of content. 
+
+![Background/Foreground Seperation](/blog/5_15_25/bg-fg-issue.jpg "Bad Seperation of Content")
+
+Lastly, fixing the padding of the outer components created a nice "breathing space" between content within the center box and the background. 
+To help fill in the empty space of the background, I found [a neat component from Magic UI](https://magicui.design/docs/components/animated-grid-pattern) to fill it in.
+
+![Background/Foreground Seperation... again.](/blog/5_15_25/new-padding.jpg "Adding Padding") 
+
+## oh my god the background took forever. why.
+Unfortuantely, a university degree in Computer Science wasn't enough.  
+
+In hindsight, the solution was basic and only needed a couple of Tailwind CSS class calls i.e. `-z-10` and `fixed`. However, researching how and why the grid pattern was 
+constantly showing above the content as well as staying within an area of one-screen was insanely frustrating. 
+
+![Background Grid Issues](/blog/5_15_25/bg-pains.jpg "Background Pains")
+
+...thats really it. This section was really here just for me to vent about how I added the background, removed it cause it wasn't working, and re-added after when I figured it out. 
+
+```jsx
+console.log("Hello World");
+```
+
+| Header 1 | Header 2 |
+| -------- | -------- |
+| Cell 1   | Cell 2   |
+| Cell 3   | Cell 4   |
