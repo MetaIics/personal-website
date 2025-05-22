@@ -1,13 +1,15 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon, PaletteIcon } from "lucide-react";
 
+const deploymentPrefix = process.env.NODE_ENV === "production" ? "/personal-website" : "";
+
 export const DATA = {
   name: "Metalics",
   url: "https://github.com/MetaIics/personal-website",
   description:
     "Streamer, Texas A&M Alumni, Artist, Game Developer, and Video Gamer.  \nAlso known as Mialstec or Allen.",
   summary:
-    "Computer Science Major on the streets, [Twitch streamer](https://twitch.tv/MetaIics) in the sheets. I am looking for ways to improve my skills in digital art, storytelling, game development, and everything in between. \n\nYou might catch me developing games such as [MusiTALITY]() and Project: τ (Tentative Title) or working on improving my stream!\n\nFeel free to take a look at [some artworks I've made](/artworks) or follow me through [write ups on my blog](/blog)! You can also use the Navigation Bar to go to my socials and contacts.",
+    "Computer Science Major on the streets, [Twitch streamer](https://twitch.tv/MetaIics) in the sheets. I am looking for ways to improve my skills in digital art, storytelling, game development, and everything in between. \n\nYou might catch me developing games such as MusiTALITY and Project: τ (Tentative Title) or working on improving my stream!\n\nFeel free to take a look at [some artworks I've made](" + deploymentPrefix + "/artworks) or follow me through [write ups on my blog](" + deploymentPrefix + "/blog)! You can also use the Navigation Bar to go to my socials and contacts.",
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/artworks", icon: PaletteIcon, label: "Artworks" },

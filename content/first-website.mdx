@@ -29,7 +29,7 @@ Thankfully, it's not that different.
 
 I managed to find [a pretty template to use as my own website](https://magicui.design/docs/templates/portfolio)!  
 This template utilized a completely different libraries, giving me the option to (god forbid) learn about new tech stacks. 
-![Portfolio Template](/blog/5_15_25/portfolio-demo.gif "Portfolio Template Demo")
+![Portfolio Template](/personal-website/blog/5_15_25/portfolio-demo.gif "Portfolio Template Demo")
 
 The tech stack of the template (and this website) is as follows:  
 React, Next.js, TypeScript, Tailwind CSS, Motion, and shadcn/ui.  
@@ -51,12 +51,12 @@ One of the earliest examples was the lack of seperation of the "content" and the
 the background colors and how it was called can be found in the `globals.css` file. From there, simply adding the proper 
 background color call i.e. `bg-muted` created a clean seperation of content. 
 
-![Background/Foreground Seperation](/blog/5_15_25/bg-fg-issue.jpg "Bad Seperation of Content")
+![Background/Foreground Seperation](/personal-website/blog/5_15_25/bg-fg-issue.jpg "Bad Seperation of Content")
 
 Lastly, fixing the padding of the outer components created a nice "breathing space" between content within the center box and the background. 
 To help fill in the empty space of the background, I found [a neat component from Magic UI](https://magicui.design/docs/components/animated-grid-pattern) to fill it in.
 
-![Background/Foreground Seperation... again.](/blog/5_15_25/new-padding.jpg "Adding Padding") 
+![Background/Foreground Seperation... again.](/personal-website/blog/5_15_25/new-padding.jpg "Adding Padding") 
 
 
 
@@ -66,7 +66,7 @@ Unfortuantely, a university degree in Computer Science wasn't enough.
 In hindsight, the solution was basic and only needed a couple of Tailwind CSS class calls i.e. `-z-10` and `fixed`. However, researching how and why the grid pattern was 
 constantly showing above the content as well as staying within an area of one-screen was insanely frustrating. 
 
-![Background Grid Issues](/blog/5_15_25/bg-pains.jpg "Background Pains")
+![Background Grid Issues](/personal-website/blog/5_15_25/bg-pains.jpg "Background Pains")
 
 ...thats really it. This section was really here just for me to vent about how I added the background, removed it cause it wasn't working, 
 and re-added after when I figured it out. 
@@ -91,7 +91,7 @@ for the blog page!
 With how the files are organized, the `app` folder with the `page.tsx` file is effectively the "Home" or root of the website.
 You could imagine my surprise when I see a folder named `[slug]` within `app/blog`, which indicates that a webpage exists beyond `/` and `/blog`.
 
-![Blog File Set-up](/blog/5_15_25/blog-template.jpg "Blog File Set-up")
+![Blog File Set-up](/personal-website/blog/5_15_25/blog-template.jpg "Blog File Set-up")
 
 With my shallow research into [Dynamic Routing](https://nextjs.org/docs/pages/building-your-application/routing/dynamic-routes), this is a simple way to easily add
 (or remove) blog posts! The actual content of the blog is a `.mdx` file, which is then rendered as a webpage. Whenever I need to add a new blog post,
@@ -110,7 +110,7 @@ website redirection is completed.
 Along with minor edits to the `.mdx` to include a description and post type, the overall format of the pages feel complete.
 There might be additional changes after this post is completed, but that's because I'm indecisive.
 
-![Blog Header](/blog/5_15_25/blog-header.jpg "Blog Header")
+![Blog Header](/personal-website/blog/5_15_25/blog-header.jpg "Blog Header")
 
 ## moving forward
 
