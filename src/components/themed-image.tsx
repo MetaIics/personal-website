@@ -14,7 +14,8 @@ export function ThemedImage() {
 
   if (!mounted) return null;
 
-  const src = theme === "dark" ? process.env.NEXT_PUBLIC_BASE_PATH + "/Sona_Dark.png" : process.env.NEXT_PUBLIC_BASE_PATH + "/Sona_Light.png";
+  const imagePrefix = process.env.NODE_ENV === "production" ? "/personal-website" : "";
+  const src = theme === "dark" ? imagePrefix + "/Sona_Dark.png" : imagePrefix + "/Sona_Light.png";
 
 
   return (
