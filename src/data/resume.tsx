@@ -36,7 +36,7 @@ export const DATA = {
         url: "https://bsky.app/profile/metalics.bsky.social",
         icon: Icons.bluesky,
 
-        navbar: true,
+        navbar: false,
       },
       Youtube: {
         name: "Youtube",
@@ -49,7 +49,7 @@ export const DATA = {
         url: "mailto:realmetalics@gmail.com",
         icon: Icons.email,
 
-        navbar: true,
+        navbar: false,
       },
     },
   }
