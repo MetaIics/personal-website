@@ -68,7 +68,7 @@ export default async function Page() {
                   Take a Peek 
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Concepts, Renders, and Animation Rigs. Made in Krita and Live2D. Here are some iconic ones. 
+                  Concepts, Renders, and Animations. Made in Krita and Live2D. Here are some iconic ones. 
                 </p>
               </div>
             </div>
