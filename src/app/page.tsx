@@ -176,7 +176,7 @@ export default async function Page() {
                   className="text-blue-500 hover:underline"
                 >
                   Just send me an email!
-                </Link>{" "} I'll get to you as soon as I can.
+                </Link>{" "} I&apos;ll get to you as soon as I can.
               </p>
             </div>
           </BlurFade>
