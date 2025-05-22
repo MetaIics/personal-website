@@ -111,7 +111,7 @@ export default async function Blog({
         </div> */}
         <div className="flex-row flex flex-1 space-y-2 pb-5">
           <BlurFadeText
-            className="py-4 sm:text-base md:text-xl "
+            className="max-w-[600px] sm:text-base md:text-xl text-muted-foreground py-4"
             delay={BLUR_FADE_DELAY * 2}
             text={'Published: ' + formatDate(post.metadata.publishedAt)}
           />
@@ -130,7 +130,7 @@ export default async function Blog({
         </div>
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
           <article
-            className="prose dark:prose-invert"
+            className="prose dark:prose-invert pb-14"
             dangerouslySetInnerHTML={{ __html: post.source }}
           ></article>
         </BlurFade>

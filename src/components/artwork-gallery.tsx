@@ -415,8 +415,8 @@ const selections = {
 
 
 export default function ArtworkGallery() {
-    const [image_array, setGallery] = useState(images_2023);
-    const [imageYear, setYear] = useState(2023);
+    const [image_array, setGallery] = useState(images_2025);
+    const [imageYear, setYear] = useState(2025);
 
     
 
@@ -439,10 +439,12 @@ export default function ArtworkGallery() {
 
     }, [imageYear]);
 
+    if(image_array === null)
+      return;
+     
     return (
       <div>
         <BlurFade delay={BLUR_FADE_DELAY * 2} className="flex-col flex flex-auto pb-3 items-center justify-center">
-          <span>Select a year:</span>
           <ToggleGroup defaultValue={["2025"]} className="flex gap-1 rounded-md border bg-card p-0.5">
             <Toggle 
               value='2025' 

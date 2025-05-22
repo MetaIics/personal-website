@@ -1,8 +1,6 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-button";
-import { DATA } from "@/data/resume";
-import { ImageGallery } from "react-image-grid-gallery";
 import Link from "next/link";
 import ArtworkGallery from "@/components/artwork-gallery";
 

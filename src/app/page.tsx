@@ -56,9 +56,45 @@ export default async function Page() {
           </Markdown>
         </BlurFade>
       </section>
-      <section id="posts">
+      <section id="artworks">
         <div className="space-y-12 w-full pt-12 pb-6">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                  Artworks
+                </div>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  Take a Peek 
+                </h2>
+                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  Concepts, Renders, and Animation Rigs. Made in Krita and Live2D. Here are some iconic ones. 
+                </p>
+              </div>
+            </div>
+          </BlurFade>
+        </div>
+          <div className="pb-6">
+            <BlurFade delay={BLUR_FADE_DELAY * 6}>
+              <MiniArtworkGallery />
+            </BlurFade>
+          </div>
+          <div className="flex flex-col items-center justify-center text-center">
+            <BlurFadeText
+              className="max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert"
+              delay={BLUR_FADE_DELAY * 7}
+              text={"Looking for other pieces?"}
+            />
+            <BlurFade delay={BLUR_FADE_DELAY * 7}>
+              <Link href={"/artworks"}>
+                <InteractiveHoverButton>Artworks</InteractiveHoverButton>
+              </Link>
+            </BlurFade>
+          </div>
+      </section>
+      <section id="posts">
+        <div className="space-y-12 w-full pt-12 pb-6">
+          <BlurFade delay={BLUR_FADE_DELAY * 8}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
@@ -85,7 +121,7 @@ export default async function Page() {
           })
           .slice(0, 3)
           .map((post, id) => (
-            <BlurFade delay={BLUR_FADE_DELAY * 6 + id * 0.05} key={post.slug}>
+            <BlurFade delay={BLUR_FADE_DELAY * 9 + id * 0.05} key={post.slug}>
               <Card className="p-2 mb-4">
                 <Link
                   className="flex flex-col space-y-1"
@@ -112,10 +148,10 @@ export default async function Page() {
           <div className="flex flex-col items-center justify-center text-center">
             <BlurFadeText
               className="max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert"
-              delay={BLUR_FADE_DELAY * 7}
+              delay={BLUR_FADE_DELAY * 10}
               text={"Want more or can't find the right post?"}
             />
-            <BlurFade delay={BLUR_FADE_DELAY * 7}>
+            <BlurFade delay={BLUR_FADE_DELAY * 10}>
               <Link href={"/blog"}>
                 <InteractiveHoverButton>Posts</InteractiveHoverButton>
               </Link>
@@ -123,45 +159,9 @@ export default async function Page() {
           </div>
           
       </section>
-      <section id="artworks">
-        <div className="space-y-12 w-full pt-12 pb-6">
-          <BlurFade delay={BLUR_FADE_DELAY * 8}>
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                  Artworks
-                </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Take a Peek 
-                </h2>
-                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Concepts, Renders, and Animation Rigs. Made in Krita and Live2D. Here are some iconic ones. 
-                </p>
-              </div>
-            </div>
-          </BlurFade>
-        </div>
-          <div className="pb-6">
-            <BlurFade delay={BLUR_FADE_DELAY * 9}>
-              <MiniArtworkGallery />
-            </BlurFade>
-          </div>
-          <div className="flex flex-col items-center justify-center text-center">
-            <BlurFadeText
-              className="max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert"
-              delay={BLUR_FADE_DELAY * 10}
-              text={"Looking for other pieces?"}
-            />
-            <BlurFade delay={BLUR_FADE_DELAY * 10}>
-              <Link href={"/artworks"}>
-                <InteractiveHoverButton>Artworks</InteractiveHoverButton>
-              </Link>
-            </BlurFade>
-          </div>
-      </section>
       <section id="contact">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
-          <BlurFade delay={BLUR_FADE_DELAY * 8}>
+          <BlurFade delay={BLUR_FADE_DELAY * 11}>
             <div className="space-y-3 pb-5">
               <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
                 Contact
