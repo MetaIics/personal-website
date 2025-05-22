@@ -40,7 +40,7 @@ const mini_gallery = [
 const images_2025 = [
   {
     id: "2025_4",
-    alt: "Mialstec (Computer) - Key art for the website. My \"Fursona\".",
+    alt: "Mialstec (Computer) - Key art for the website.",
     caption: "Mialstec (Computer)",
     src: imagePrefix + "/artworks/2025/mialstec-comp.png",
   },
