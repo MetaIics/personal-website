@@ -67,7 +67,7 @@ const images_2025 = [
     alt: "Stinger Animation - Each person shares the same fate. It's just the way they express it that differs.",
     caption: "Stinger Animation",
     src: imagePrefix + "/artworks/2025/metalics-transition.gif",
-  },
+  }
 ]
 
 const images_2024 = [
@@ -160,7 +160,7 @@ const images_2024 = [
     alt: "Dragon VTuber (2nd Edition) - Reworked Model with a different style.",
     caption: "Dragon VTuber (2nd Edition)",
     src: imagePrefix + "/artworks/2024/metalics-ref-old.jpg",
-  },
+  }
 ];
 
 const images_2023 = [
@@ -319,7 +319,7 @@ const images_2023 = [
     alt: "Moth - VTuber reveal art. Stuck in a void.",
     caption: "Moth (VTuber Model)",
     src: imagePrefix + "/artworks/2023/moth-reveal.jpg",
-  },
+  }
 ];
 
 const images_2022 = [
@@ -406,7 +406,7 @@ const images_2022 = [
     alt: "Moth (First Edition) - First ever model of my VTuber.",
     caption: "Moth (First Edition)",
     src: imagePrefix + "/artworks/2022/moth-legacy.png",
-  },
+  }
 ];
 
 
@@ -418,8 +418,6 @@ const selections = {
 export default function ArtworkGallery() {
     const [image_array, setGallery] = useState(images_2025);
     const [imageYear, setYear] = useState(2025);
-
-    
 
     useEffect(() => {
 
@@ -479,7 +477,7 @@ export default function ArtworkGallery() {
         </BlurFade>
 
         <BlurFade delay={BLUR_FADE_DELAY * 3} className="py-1">
-          <ImageGallery imagesInfoArray={image_array} gapSize={12} />
+          <ImageGallery imagesInfoArray={image_array || images_2025} gapSize={12} />
         </BlurFade>
       </div>
     )
