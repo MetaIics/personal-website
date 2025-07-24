@@ -1,4 +1,4 @@
-# Portfolio Template
+# Built Using a Portfolio Template
 
 <div align="center">
 <img alt="Portfolio" src="https://github.com/dillionverma/portfolio/assets/16860528/57ffca81-3f0a-4425-b31d-094f61725455" width="90%">
@@ -6,9 +6,9 @@
 
 Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://magicui.design/), originally deployed on Vercel.
 
-# Getting Started using the template
+# Getting Started 
 
-1. Clone this repository to your local machine:
+1. Clone the following repository to your local machine:
 
    ```bash
    git clone https://github.com/dillionverma/portfolio
