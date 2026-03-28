@@ -477,7 +477,21 @@ export default function ArtworkGallery() {
         </BlurFade>
 
         <BlurFade delay={BLUR_FADE_DELAY * 3} className="py-1">
-          <ImageGallery imagesInfoArray={image_array || images_2025} gapSize={12} />
+          <div style={{ display: imageYear === 2025 ? "block" : "none" }}>
+            <ImageGallery imagesInfoArray={images_2025} gapSize={12} />
+          </div>
+
+          <div style={{ display: imageYear === 2024 ? "block" : "none" }}>
+            <ImageGallery imagesInfoArray={images_2024} gapSize={12} />
+          </div>
+
+          <div style={{ display: imageYear === 2023 ? "block" : "none" }}>
+            <ImageGallery imagesInfoArray={images_2023} gapSize={12} />
+          </div>
+
+          <div style={{ display: imageYear === 2022 ? "block" : "none" }}>
+            <ImageGallery imagesInfoArray={images_2022} gapSize={12} />
+          </div>
         </BlurFade>
       </div>
     )
